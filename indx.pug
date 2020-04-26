@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel='stylesheet', href='../styles.css')
+        title Louise Flanagan
+    body
+        header
+            include ./includes/nav.pug
+        .container
+            h1#title.title hi.
+            h2 i'm louise, full stack dev
+            p#bio.
+                I'm a full stack student at Coder Academy Sydney and I'm looking for my first dev role. I love
+                creating with code; you can see my passion in my projects below, on GitHub and CodePen. If you
+                like what you see, please say hello or chat with me on twitter ☺️
+            .projects
+                #pikachu
+                    p.resource codepen 
+                    h3 pikachu art
+                    ul.categories
+                        li css
+                        li animation
+                        li front-end
+                #devduckswap 
+                    p.resource deployed site 
+                    h3 dev duck swap marketplace
+                    ul.categories
+                        li ruby
+                        li ruby on rails
+                        li full-stack
+                #linkart 
+                    p.resource codepen 
+                    h3 gradient art link
+                    ul.categories
+                        li css
+                        li front-end
+                #debugduck 
+                    p.resource codepen 
+                    h3 ducky debugger
+                    ul.categories
+                        li css
+                        li front-end
+                #pixelarticle 
+                    p.resource dev.to article 
+                    h3 beginner pixel art
+                    ul.categories
+                        li css
+                        li tutorial
+                #archive 
+                    p.resource archive 
+                    h3 old portfolios
+                    ul.categories
+                        li css
+                        li html
+script(src='/includes/script.js')

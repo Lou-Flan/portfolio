@@ -18,40 +18,24 @@ $hover: inset 0.25em 0.25em white;
 	height: $height;
 }
 
-// @mixin clouds($width, $height, $left, $top) {
-// 	background: $blue;
-// 	width: $width;
-// 	height: $height;
-// 	position: absolute;
-// 	left: $left;
-// 	top: $top;
-// }
-
 @mixin hover() {
 	&:hover {
 		transform: scale(1.02);
 	}
 }
 
-// body {
-// 	margin: 0;
-// 	background: $blue;
-// 	transition: $transition;
-// }
-
 #rainbow-container {
-	// width: 100vw;
-	height: 5rem;
+	height: 6rem;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: flex-start;
 	overflow: hidden;
 	
 	ul{
 		list-style-type: none;
 	}
 	#outer {
-		@include defaults(transparent, relative, 35%, 0%, 7rem, 7rem);
+		@include defaults(transparent, relative, 35%, 0%, 9rem, 9rem);
 	}
 
 	#yellow {
@@ -62,72 +46,33 @@ $hover: inset 0.25em 0.25em white;
 		@include hover;
 	}
 
-#pink {
-	@include defaults($pink, absolute, 10%, 8%, 80%, 80%);
-	z-index: 1;
-	border-radius: 50%;
-	border: $border;
-	@include hover;
-}
+	#pink {
+		@include defaults($pink, absolute, 10%, 8%, 80%, 80%);
+		z-index: 1;
+		border-radius: 50%;
+		border: $border;
+		@include hover;
+	}
 
-#green {
-	@include defaults($green, absolute, 30%, 28%, 40%, 40%);
-	border-radius: 50%;
-	border: $border;
-	z-index: 3;
-	@include hover;
-}
+	#green {
+		@include defaults($green, absolute, 30%, 28%, 40%, 40%);
+		border-radius: 50%;
+		border: $border;
+		z-index: 3;
+		@include hover;
+	}
 
-#inner {
-	@include defaults($white, absolute, 40%, 38%, 20%, 20%);
-	border-radius: 50%;
-	border: $border;
-	z-index: 3;
-	transition: $transition;
-}
+	#inner {
+		@include defaults($white, absolute, 40%, 38%, 20%, 20%);
+		border-radius: 50%;
+		border: $border;
+		z-index: 3;
+		transition: $transition;
+	}
 
-// #cover {
-// 	@include defaults($blue, absolute, 50%, 0%, 100%, 50%);
-// 	z-index: 10;
-// 	transition: $transition;
-// }
-
-
-
-// li:nth-child(1) {
-// 	// $width, $height, $left, $top
-// 	@include clouds(40%, 30%, 4%, 3%);
-// 	border-radius: 40% / 100%;
-// }
-
-// li:nth-child(2) {
-// 	@include clouds(15%, 25%, 6%, -6%);
-// 	border-radius: 50%;
-// }
-
-// li:nth-child(3) {
-// 	@include clouds(22%, 40%, 19%, -16%);
-// 	border-radius: 50%;
-// }
-
-// li:nth-child(4) {
-// 	@include clouds(40%, 30%, 57%, 3%);
-// 	border-radius: 40% / 100%;
-// }
-
-// li:nth-child(5) {
-// 	@include clouds(15%, 25%, 80%, -6%);
-// 	border-radius: 50%;
-// }
-
-// li:nth-child(6) {
-// 	@include clouds(22%, 40%, 59%, -16%);
-// 	border-radius: 50%;
-// }
-
-.run-animation {
-	animation: jello-horizontal 0.8s 1 both;
-}
+	.run-animation {
+		animation: jello-horizontal 0.8s 1 both;
+	}
 }
 
 @-webkit-keyframes jello-horizontal {

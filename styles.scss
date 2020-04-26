@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:500|Roboto+Mono:300&display=swap");
 @import "rainbow";
+@import "nav";
 
-$heading-font: "Raleway",
-sans-serif;
-$sub-heading-font: "Roboto Mono",
-monospace;
+$heading-font: "Raleway", sans-serif;
+$sub-heading-font: "Roboto Mono", monospace;
 
 $green: rgb(47, 214, 175);
 $pink: rgba(255, 54, 117, 1);
@@ -18,143 +17,186 @@ $list: $green, $pink, $yellow;
 $nth: nth($list, $random);
 
 @mixin flex($direction, $justify) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: $justify;
-    flex-direction: $direction;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $justify;
+  flex-direction: $direction;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    @include flex(row, center);
-    font-family: $heading-font;
+  @include flex(row, center);
+  font-family: $heading-font;
 }
 
 .container {
-    @include flex(column, center);
-    width: 65vw;
+  @include flex(column, center);
+  width: 65vw;
 }
 
-header, footer {
-    font-family: $sub-heading-font;
-    width: 80vw;
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
+header,
+footer {
+  font-family: $sub-heading-font;
+  width: 80vw;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
 
+  @media only screen and (max-width: 600px) {
+    height: 200px;
     nav {
-        width: 100%;
-
-        ul {
-            @include flex(row, flex-end);
-            align-items: center;
-
-            li {
-                list-style: none;
-                margin: 10px;
-            }
-                
-            a {
-                text-decoration: none;
-            }
-        }
+        margin-top: 20px;
     }
+  }
+
+  nav {
+    width: 100%;
+
+    #left {
+      flex: 10;
+    }
+
+    ul {
+      @include flex(row, flex-end);
+      align-items: center;
+
+      li {
+        list-style: none;
+        margin: 10px;
+
+        @media only screen and (max-width: 600px) {
+          margin: 5px;
+        }
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 h1 {
-    font-family: $heading-font;
-    font-size: 10em;
-    font-weight: bolder;
-    color: $green;
+  font-family: $heading-font;
+  font-size: 10em;
+  font-weight: bolder;
+  color: $green;
 }
 
-h2{
-    font-family: $sub-heading-font;
-    font-weight: bolder;
-    font-size: 2em;
-    margin: .5rem;
+h2 {
+  font-family: $sub-heading-font;
+  font-weight: bolder;
+  font-size: 2em;
+  margin: 0.5rem;
 }
 
 #bio {
-    margin: .5rem;
-    font-size: 1.2em;
+  margin: 0.5rem;
+  font-size: 1.2em;
 }
 
-@mixin bgroundimage($url){
-    &:hover{
-        background-image: url(#{$url});
-        background-size: cover;
-    }
+@mixin bgcolour($colour, $url) {
+  background: $colour;
+  &:hover {
+    background-image: url(#{$url});
+    background-size: cover;
+    color: $black;
+  }
 }
-
-@mixin bgcolour($colour){
-    background: $colour;
-}
-
 
 .projects {
-    color: $white;
-    margin-top: 5%;
-    @include flex(row, flex-start);
+  color: $white;
+  margin-top: 5%;
+  @include flex(row, flex-start);
 
-    div {
-        flex: 1 1 25ch;
-        @include flex(column, center);
-        height: 20em;
-        overflow: hidden;
-        margin: .5rem;
-        background: $yellow;
+  div {
+    flex: 1 1 25ch;
+    @include flex(column, center);
+    height: 20em;
+    overflow: hidden;
+    margin: 0.5rem;
+    background: $yellow;
 
-        .categories, .resource {
-            position: relative;
-            left: 2rem;
-            padding-top: 1rem;
-            li{
-                display: inline-block;
-                &::after { content: " | ";}
-            }
+    .categories,
+    .resource {
+      position: relative;
+      left: 2rem;
+      padding-top: 1rem;
+      li {
+        display: inline-block;
+        &::after {
+          content: " | ";
         }
-
-        h3 {
-            font-family: $sub-heading-font;
-            font-size: 2em;
-            padding-left: 2rem;
-            padding-top: 1rem;
-            margin-right: 3em;
-        }
+      }
     }
 
-    #pikachu {
-        @include bgcolour($green);
-        @include bgroundimage("./img/pikachu.png")
+    h3 {
+      font-family: $sub-heading-font;
+      font-size: 2em;
+      padding-left: 2rem;
+      padding-top: 1rem;
+      margin-right: 3em;
     }
-    #devduckswap {
-        @include bgcolour($pink);
-        @include bgroundimage("./img/devduckswap.png")
-    }
-    #linkart {
-        @include bgcolour($yellow);
-        @include bgroundimage("./img/link.png")
-    }
-    #debugduck {
-        @include bgcolour($pink);
-        @include bgroundimage("./img/debugduck.png")
-    }
-    #pixelarticle {
-        @include bgcolour($green);
-        @include bgroundimage("./img/pixelart.jpeg")
-    }
+  }
+
+  #pikachu {
+    @include bgcolour($green, "./img/pikachu.png");
+  }
+  #devduckswap {
+    @include bgcolour($pink, "./img/devduckswap.png");
+  }
+  #linkart {
+    @include bgcolour($yellow, "./img/link.png");
+  }
+  #debugduck {
+    @include bgcolour($pink, "./img/debugduck.png");
+  }
+  #pixelarticle {
+    @include bgcolour($green, "./img/pixelart.jpeg");
+  }
 }
 
 img {
-    z-index: -1;
-    max-width:100%;
-    max-height: auto;
+  z-index: -1;
+  max-width: 100%;
+  max-height: auto;
 }
 
+//card flip animation
+
+.flip-2-ver-right-bck {
+  -webkit-animation: bg-change 10s infinite both;
+  animation: bg-change 10s infinite both;
+}
+
+@-webkit-keyframes bg-change {
+  0% {
+  }
+
+  50%,
+  60%,
+  70%,
+  80% {
+    background-image: url("./img/pikachu.png");
+    // color: transparent;
+  }
+}
+
+@keyframes bg-change {
+  0% {
+  }
+
+  50%,
+  60%,
+  70%,
+  80% {
+    background-image: url("./img/pikachu.png");
+    // color: transparent;
+  }
+}
