@@ -64,7 +64,8 @@ footer {
 
     ul {
       @include flex(row, flex-end);
-      align-items: center;
+      align-items: flex-end;
+      align-content: flex-end;
 
       li {
         list-style: none;
