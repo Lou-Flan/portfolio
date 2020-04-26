@@ -39,6 +39,7 @@ let title = document.getElementById('title');
 let viewportWidth;
 let nav = document.getElementById('navList');
 let rainbow = document.getElementById('left');
+let container = document.getElementById('container');
 
 let setWidth = function () {
     viewportWidth = window.innerWidth || document.documentElement.clientWidth;
@@ -52,17 +53,20 @@ let responsiveTitle = function () {
         navList.style.alignContent = "flex-end";
         navList.style.alignItems = "flex-end";
         rainbow.style.display = "none";
+        container.style.width = "90vw"
         return};
     if (viewportWidth < 1200) {
         title.textContent = "hello."
         title.style.fontSize = "8rem";
         navList.style.flexDirection = "row";
         rainbow.style.display = "block";
+        container.style.width = "75vw"
         return };
     title.textContent = "nice to meet you.";
     title.style.fontSize = "7rem"; 
     navList.style.flexDirection = "row";
     rainbow.style.display = "block";
+    container.style.width = "65vw"
     return 
 }
 
