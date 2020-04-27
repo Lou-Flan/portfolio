@@ -280,8 +280,7 @@ body {
   }
 }
 
-header,
-footer {
+header, footer {
   font-family: "Roboto Mono", monospace;
   width: 80vw;
   height: 200px;
@@ -290,20 +289,17 @@ footer {
   z-index: 1;
 }
 
-header nav,
-footer nav {
+header nav, footer nav {
   width: 100%;
 }
 
-header nav #left,
-footer nav #left {
+header nav #left, footer nav #left {
   -webkit-box-flex: 10;
       -ms-flex: 10;
           flex: 10;
 }
 
-header nav ul,
-footer nav ul {
+header nav ul, footer nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,28 +319,52 @@ footer nav ul {
       align-content: flex-end;
 }
 
-header nav ul li,
-footer nav ul li {
+header nav ul li, footer nav ul li {
   list-style: none;
   margin: 10px;
 }
 
 @media only screen and (max-width: 600px) {
-  header nav ul li,
-  footer nav ul li {
+  header nav ul li, footer nav ul li {
     margin: 5px;
   }
 }
 
-header nav ul a,
-footer nav ul a {
+header nav ul a, footer nav ul a {
   text-decoration: none;
   color: black;
 }
 
-header nav ul a:hover,
-footer nav ul a:hover {
+header nav ul a:hover, footer nav ul a:hover {
   background: #2fd6af;
+}
+
+footer {
+  height: 200px;
+  width: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #footerList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 h1 {
@@ -547,6 +567,8 @@ span:hover {
 @media only screen and (min-width: 1200px) {
   img {
     width: 50%;
+    -o-object-fit: contain;
+       object-fit: contain;
     height: auto;
   }
   .description {
