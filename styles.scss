@@ -12,10 +12,6 @@ $orange: rgba(254, 93, 37, 1);
 $black: rgba(0, 0, 0, 1);
 $white: rgba(255, 255, 255, 1);
 
-$random: random(3);
-$list: $green, $pink, $yellow;
-$nth: nth($list, $random);
-
 @mixin flex($direction, $justify) {
   display: flex;
   flex-wrap: wrap;
@@ -39,6 +35,52 @@ body {
   width: 65vw;
 }
 
+@media only screen and (max-width: 600px) {
+  nav {
+    margin-top: 20px;
+    #navList {
+      align-items: flex-end;
+      align-content: flex-end;
+      flex-direction: column;
+      #left {
+        display: none;
+      }
+    }
+  }
+
+  .container {
+    width: 90vw;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  nav {
+    #navList {
+      flex-direction: row;
+      #left {
+        display: block;
+      }
+    }
+  }
+  .container {
+    width: 75vw;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  nav {
+    #navList {
+      flex-direction: row;
+      #left {
+        display: block;
+      }
+    }
+  }
+  .container {
+    width: 65vw;
+  }
+}
+
 header,
 footer {
   font-family: $sub-heading-font;
@@ -47,13 +89,6 @@ footer {
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
-
-  @media only screen and (max-width: 600px) {
-    height: 200px;
-    nav {
-        margin-top: 20px;
-    }
-  }
 
   nav {
     width: 100%;
@@ -78,6 +113,11 @@ footer {
 
       a {
         text-decoration: none;
+        color: $black;
+
+        &:hover {
+          background: $green;
+        }
       }
     }
   }
@@ -90,6 +130,10 @@ h1 {
   color: $green;
 }
 
+#project-title {
+  font-size: 4em;
+}
+
 h2 {
   font-family: $sub-heading-font;
   font-weight: bolder;
@@ -100,6 +144,41 @@ h2 {
 #bio {
   margin: 0.5rem;
   font-size: 1.2em;
+  a {
+    text-decoration: none;
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(35%, $green),
+      color-stop(35%, transparent)
+    );
+    background-image: linear-gradient(to top, $green 35%, transparent 35%);
+    &:visited {
+      text-decoration: none;
+      color: $black;
+    }
+    &:hover {
+      background: $green;
+    }
+  }
+}
+
+span {
+    background-image: linear-gradient(to top, $green 35%, transparent 35%);
+    &:visited {
+      text-decoration: none;
+      color: $black;
+    }
+    &:hover {
+      background: $green;
+    }
+}
+
+.description {
+  color: $black;
+  margin: 2em 0em;
+  font-size: 1.2em;
 }
 
 @mixin bgcolour($colour, $url) {
@@ -107,7 +186,7 @@ h2 {
   &:hover {
     background-image: url(#{$url});
     background-size: cover;
-    color: $black;
+    color: transparent;
   }
 }
 
@@ -115,6 +194,10 @@ h2 {
   color: $white;
   margin-top: 5%;
   @include flex(row, flex-start);
+
+  a {
+      text-decoration: none;
+  }
 
   div {
     flex: 1 1 25ch;
@@ -150,7 +233,7 @@ h2 {
     @include bgcolour($green, "./img/pikachu.png");
   }
   #devduckswap {
-    @include bgcolour($pink, "./img/devduckswap.png");
+    @include bgcolour($pink, "./img/dds1.png");
   }
   #linkart {
     @include bgcolour($yellow, "./img/link.png");
@@ -163,41 +246,32 @@ h2 {
   }
 }
 
-img {
-  z-index: -1;
-  max-width: 100%;
-  max-height: auto;
-}
-
-//card flip animation
-
-.flip-2-ver-right-bck {
-  -webkit-animation: bg-change 10s infinite both;
-  animation: bg-change 10s infinite both;
-}
-
-@-webkit-keyframes bg-change {
-  0% {
-  }
-
-  50%,
-  60%,
-  70%,
-  80% {
-    background-image: url("./img/pikachu.png");
-    // color: transparent;
+@media only screen and (max-width: 600px) {
+  img {
+    width: 90vw;
+    height: auto;
+    //   margin: 6px 0;
   }
 }
 
-@keyframes bg-change {
-  0% {
+@media only screen and (min-width: 600px) {
+  img {
+    width: 100%;
+    height: auto;
   }
+  .description {
+    width: 60vw;
+  }
+}
 
-  50%,
-  60%,
-  70%,
-  80% {
-    background-image: url("./img/pikachu.png");
-    // color: transparent;
+@media only screen and (min-width: 1200px) {
+  img {
+    width: 25%;
+    height: auto;
+    order: 1;
+  }
+  .description {
+    width: 50vw;
+    order: 2;
   }
 }

@@ -227,6 +227,59 @@ body {
   width: 65vw;
 }
 
+@media only screen and (max-width: 600px) {
+  nav {
+    margin-top: 20px;
+  }
+  nav #navList {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav #navList #left {
+    display: none;
+  }
+  .container {
+    width: 90vw;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  nav #navList {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  nav #navList #left {
+    display: block;
+  }
+  .container {
+    width: 75vw;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  nav #navList {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  nav #navList #left {
+    display: block;
+  }
+  .container {
+    width: 65vw;
+  }
+}
+
 header,
 footer {
   font-family: "Roboto Mono", monospace;
@@ -235,17 +288,6 @@ footer {
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
-}
-
-@media only screen and (max-width: 600px) {
-  header,
-  footer {
-    height: 200px;
-  }
-  header nav,
-  footer nav {
-    margin-top: 20px;
-  }
 }
 
 header nav,
@@ -297,6 +339,12 @@ footer nav ul li {
 header nav ul a,
 footer nav ul a {
   text-decoration: none;
+  color: black;
+}
+
+header nav ul a:hover,
+footer nav ul a:hover {
+  background: #2fd6af;
 }
 
 h1 {
@@ -304,6 +352,10 @@ h1 {
   font-size: 10em;
   font-weight: bolder;
   color: #2fd6af;
+}
+
+#project-title {
+  font-size: 4em;
 }
 
 h2 {
@@ -315,6 +367,41 @@ h2 {
 
 #bio {
   margin: 0.5rem;
+  font-size: 1.2em;
+}
+
+#bio a {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(35%, #2fd6af), color-stop(35%, transparent));
+  background-image: linear-gradient(to top, #2fd6af 35%, transparent 35%);
+}
+
+#bio a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+#bio a:hover {
+  background: #2fd6af;
+}
+
+span {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(35%, #2fd6af), color-stop(35%, transparent));
+  background-image: linear-gradient(to top, #2fd6af 35%, transparent 35%);
+}
+
+span:visited {
+  text-decoration: none;
+  color: black;
+}
+
+span:hover {
+  background: #2fd6af;
+}
+
+.description {
+  color: black;
+  margin: 2em 0em;
   font-size: 1.2em;
 }
 
@@ -333,6 +420,10 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.projects a {
+  text-decoration: none;
 }
 
 .projects div {
@@ -389,7 +480,7 @@ h2 {
 .projects #pikachu:hover {
   background-image: url(./img/pikachu.png);
   background-size: cover;
-  color: black;
+  color: transparent;
 }
 
 .projects #devduckswap {
@@ -397,9 +488,9 @@ h2 {
 }
 
 .projects #devduckswap:hover {
-  background-image: url(./img/devduckswap.png);
+  background-image: url(./img/dds1.png);
   background-size: cover;
-  color: black;
+  color: transparent;
 }
 
 .projects #linkart {
@@ -409,7 +500,7 @@ h2 {
 .projects #linkart:hover {
   background-image: url(./img/link.png);
   background-size: cover;
-  color: black;
+  color: transparent;
 }
 
 .projects #debugduck {
@@ -419,7 +510,7 @@ h2 {
 .projects #debugduck:hover {
   background-image: url(./img/debugduck.png);
   background-size: cover;
-  color: black;
+  color: transparent;
 }
 
 .projects #pixelarticle {
@@ -429,39 +520,39 @@ h2 {
 .projects #pixelarticle:hover {
   background-image: url(./img/pixelart.jpeg);
   background-size: cover;
-  color: black;
+  color: transparent;
 }
 
-img {
-  z-index: -1;
-  max-width: 100%;
-  max-height: auto;
-}
-
-.flip-2-ver-right-bck {
-  -webkit-animation: bg-change 10s infinite both;
-  animation: bg-change 10s infinite both;
-}
-
-@-webkit-keyframes bg-change {
-  0% {
-  }
-  50%,
-  60%,
-  70%,
-  80% {
-    background-image: url("./img/pikachu.png");
+@media only screen and (max-width: 600px) {
+  img {
+    width: 90vw;
+    height: auto;
   }
 }
 
-@keyframes bg-change {
-  0% {
+@media only screen and (min-width: 600px) {
+  img {
+    width: 100%;
+    height: auto;
   }
-  50%,
-  60%,
-  70%,
-  80% {
-    background-image: url("./img/pikachu.png");
+  .description {
+    width: 60vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  img {
+    width: 25%;
+    height: auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .description {
+    width: 50vw;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 /*# sourceMappingURL=styles.css.map */

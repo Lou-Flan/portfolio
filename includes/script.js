@@ -1,40 +1,3 @@
-
-// var projectArray = [
-//     {
-//         resource:"codepen", 
-//         title:"pikachu", 
-//         categoryOne:"css"
-//     },
-//     {
-//         resource:"codepen", 
-//         title:"debugger ducky", 
-//         categoryOne:"css"
-//     }
-// ];
-// var projectBox = document.getElementsByClassName('projects');
-
-// projectArray.forEach((key, value) => {
-//     let projectDiv = document.createElement("div");
-//     var p = document.createElement('p');
-//     // var pText = document.createTextNode(key.name);
-//     p.textContent = key.resource;
-//     console.log(p);
-//     // p.appendChild(pText);
-//     projectDiv.appendChild(p);
-//     // $("#output").append('<p>' + key.name + '</p>');
-  
-// });
-
-
-// each project in projectArray
-// #pikachu
-//     p.resource= project.resource
-//     h3= project.name
-//     ul.categories
-//         li= project.categoryOne
-//         li= project.categoryTwo
-//         li= project.categoryThree
-
 let title = document.getElementById('title');
 let viewportWidth;
 let nav = document.getElementById('navList');
@@ -46,28 +9,11 @@ let setWidth = function () {
 }
 
 let responsiveTitle = function () {
-    if(viewportWidth < 600){
-        title.textContent = "hi."; 
-        title.style.fontSize = "9rem";
-        navList.style.flexDirection = "column";
-        navList.style.alignContent = "flex-end";
-        navList.style.alignItems = "flex-end";
-        rainbow.style.display = "none";
-        container.style.width = "90vw"
-        return};
-    if (viewportWidth < 1200) {
-        title.textContent = "hello."
-        title.style.fontSize = "8rem";
-        navList.style.flexDirection = "row";
-        rainbow.style.display = "block";
-        container.style.width = "75vw"
-        return };
-    title.textContent = "nice to meet you.";
-    title.style.fontSize = "7rem"; 
-    navList.style.flexDirection = "row";
-    rainbow.style.display = "block";
-    container.style.width = "65vw"
-    return 
+    if(title){
+        return viewportWidth < 600 ? title.textContent = "hi." : 
+        (viewportWidth < 1200) ? title.textContent = "hello.": 
+        title.textContent = "nice to meet you.";
+    } 
 }
 
 setWidth();
@@ -83,13 +29,15 @@ window.addEventListener('resize', function () {
 var yellow = document.getElementById("yellow");
 var pink = document.getElementById("pink");
 var green = document.getElementById("green");
-var inner = document.getElementById("inner");
-var body = document.querySelector("body");
-
+var projectTitle = document.getElementById("project-title");
+console.log(projectTitle)
 function changeColour(element) {
-	// body.style.background = element;
-	// inner.style.background = element;
-    title.style.color = element;
+    if(title){
+        title.style.color = element; 
+    }   
+    if(projectTitle){
+        projectTitle.style.color = element;
+    }
 }
 
 yellow.addEventListener("click", () => {

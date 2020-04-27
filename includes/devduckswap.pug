@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel='stylesheet', href='../styles.css')
+        title dev duck swap
+    body
+        header
+            include ./nav.pug
+        .container#container
+            h1#project-title.title dev-duck-swap marketplace application
+            h2 ruby on rails
+            h3 #[a(href="https://github.com/Lou-Flan/rubber_ducky", target="_blank", rel="noopener noreferrer") github & docs] #[a(href="https://ducks-n-devs.herokuapp.com/", target="_blank", rel="noopener noreferrer") deployed site]
+            .projects
+                img(src="../img/dds1.png", alt="devduckswap market")
+                p.description.
+                    #[span The dev-duck-swap market place application provides a two-sided market-place for developers to find, buy and sell debugging ducks.#[br]#[br]]
+                
+                    Rubber ducky debugging is a popular problem-solving method within the tech industry; developers are encouraged to place a rubber duck at their work station and speak aloud to it whenever they encounter a bug.#[br]#[br]
+
+                    The number of information technology professional jobs in Australia is expected to increase to 758,700 by 2023 but a specific debugging duck buy and trade platform doesn't exist! There is a huge opportunity for a solution to enter the market in this unexplored territory.
+                
+                img(src="../img/dds4.png", alt="devduckswap market")
+                p.description.
+                    Locating a debugging duck is time-consuming as while this is a highly popular problem-solving method, there is not a central place for developers to go to specifically find a rubber duck.#[br]#[br]
+
+                    Adding to the problem, when a developer becomes stuck with a bug it is often that their current duck does not know enough to provide a sufficient answer. There is no way of knowing debugging experience when a duck is gifted or purchased from a store.#[br]#[br]
+
+                    The dev-duck-swap marketplace is a one-stop-shop to fix these problems by providing one platform of experienced ducks.
+                img(src="../img/dds2.png", alt="devduckswap market")
+                p.description.
+                    HTML5, CSS3, SCSS, Embedded Ruby, Bootstrap, Javascript.
+                    Ruby 2.6.3, Ruby on Rails 5.2.4.
+                    Postgresql, D-Beaver.
+                    Heroku.
+                    Trello, Slack.
+                    Stripe, Devise, Ultrahook, AWS S3.
+                    Git, Github, VS Code, Bundler, Balsamiq.
+                img(src="../img/dds3.png", alt="devduckswap market")
+    script(src='./script.js')

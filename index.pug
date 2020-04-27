@@ -14,8 +14,8 @@ html(lang="en")
             h2 i'm louise, full stack dev
             p#bio.
                 I'm a full stack student at Coder Academy Sydney and I'm looking for my first dev role. I love
-                creating with code; you can see my passion in my projects below, on GitHub and CodePen. If you
-                like what you see, please say hello or chat with me on twitter ☺️
+                creating with code; you can see my passion in my projects below, on #[a(href=urls.github, target="_blank") GitHub] and #[a(href=urls.codepen, target="_blank") CodePen]. If you
+                like what you see, please #[span say hello] or chat with me on #[a(href=urls.twitter, target="_blank") twitter] ☺️
             .projects
                 #pikachu
                     p.resource codepen 
@@ -24,13 +24,14 @@ html(lang="en")
                         li css
                         li animation
                         li front-end
-                #devduckswap 
-                    p.resource deployed site 
-                    h3 dev duck swap marketplace
-                    ul.categories
-                        li ruby
-                        li ruby on rails
-                        li full-stack
+                a(href="./includes/devduckswap.html") 
+                    #devduckswap
+                        p.resource deployed site 
+                        h3 dev duck swap marketplace
+                        ul.categories
+                            li ruby
+                            li ruby on rails
+                            li full-stack
                 #linkart 
                     p.resource codepen 
                     h3 gradient art link
