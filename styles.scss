@@ -198,10 +198,11 @@ span {
   a {
       text-decoration: none;
       color: $white;
+      flex: 1 1 25ch;
   }
 
   div {
-    flex: 1 1 25ch;
+    
     @include flex(column, center);
     height: 20em;
     overflow: hidden;

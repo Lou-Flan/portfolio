@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel='stylesheet', href='../styles.css')
+        title pikachu
+    body
+        header
+            include ./nav.pug
+        .container#container
+            h1#project-title.title pikachu animation
+            h2 pug scss
+            .projects
+                iframe(height="500" style="width: 100%;" scrolling="no" title="sleepy pikachu animation" src="https://codepen.io/louflan/embed/YzXvVPx?height=265&theme-id=light&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy")
+                p.description.
+                    #[span Touch Pikachu's forehead to start the animation#[br]#[br]]
+    script(src='./script.js')

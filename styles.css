@@ -425,12 +425,12 @@ span:hover {
 .projects a {
   text-decoration: none;
   color: white;
-}
-
-.projects div {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 25ch;
           flex: 1 1 25ch;
+}
+
+.projects div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
