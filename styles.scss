@@ -197,6 +197,7 @@ span {
 
   a {
       text-decoration: none;
+      color: $white;
   }
 
   div {
@@ -250,7 +251,9 @@ span {
   img {
     width: 90vw;
     height: auto;
-    //   margin: 6px 0;
+  }
+  #project-title {
+    font-size: 3em;
   }
 }
 
@@ -266,12 +269,19 @@ span {
 
 @media only screen and (min-width: 1200px) {
   img {
-    width: 25%;
+    width: 50%;
     height: auto;
-    order: 1;
+    // order: 1;
   }
   .description {
     width: 50vw;
-    order: 2;
+    // order: 2;
   }
+}
+
+iframe{
+    width: 100%;
+    @media only screen and (min-width: 1200px) {
+        width: 50%;
+    }
 }

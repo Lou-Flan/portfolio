@@ -424,6 +424,7 @@ span:hover {
 
 .projects a {
   text-decoration: none;
+  color: white;
 }
 
 .projects div {
@@ -528,6 +529,9 @@ span:hover {
     width: 90vw;
     height: auto;
   }
+  #project-title {
+    font-size: 3em;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -542,17 +546,21 @@ span:hover {
 
 @media only screen and (min-width: 1200px) {
   img {
-    width: 25%;
+    width: 50%;
     height: auto;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
   }
   .description {
     width: 50vw;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+  }
+}
+
+iframe {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  iframe {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
