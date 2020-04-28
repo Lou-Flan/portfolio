@@ -199,8 +199,10 @@ span {
 
 @mixin bgcolour($colour, $url) {
   background: $colour;
+  transition: background-image 0s ease;
   &:hover {
     background-image: url(#{$url});
+    background-position: center;
     background-size: cover;
     color: transparent;
   }
@@ -265,13 +267,13 @@ span {
     @include bgcolour($pink, "./img/dds1.png");
   }
   #linkart {
-    @include bgcolour($yellow, "./img/link.png");
+    @include bgcolour($green, "./img/link.png");
   }
   #debugduck {
-    @include bgcolour($pink, "./img/debugduck.png");
+    @include bgcolour($green, "./img/debugduck.png");
   }
   #pixelarticle {
-    @include bgcolour($green, "./img/pixelart.jpeg");
+    @include bgcolour($yellow, "./img/pixelart.jpeg");
   }
 }
 

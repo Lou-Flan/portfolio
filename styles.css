@@ -1383,50 +1383,65 @@ span:hover {
 
 .projects #pikachu {
   background: #2fd6af;
+  -webkit-transition: background-image 0s ease;
+  transition: background-image 0s ease;
 }
 
 .projects #pikachu:hover {
   background-image: url(./img/pikachu.png);
+  background-position: center;
   background-size: cover;
   color: transparent;
 }
 
 .projects #devduckswap {
   background: #ff3675;
+  -webkit-transition: background-image 0s ease;
+  transition: background-image 0s ease;
 }
 
 .projects #devduckswap:hover {
   background-image: url(./img/dds1.png);
+  background-position: center;
   background-size: cover;
   color: transparent;
 }
 
 .projects #linkart {
-  background: #ffce00;
+  background: #2fd6af;
+  -webkit-transition: background-image 0s ease;
+  transition: background-image 0s ease;
 }
 
 .projects #linkart:hover {
   background-image: url(./img/link.png);
+  background-position: center;
   background-size: cover;
   color: transparent;
 }
 
 .projects #debugduck {
-  background: #ff3675;
+  background: #2fd6af;
+  -webkit-transition: background-image 0s ease;
+  transition: background-image 0s ease;
 }
 
 .projects #debugduck:hover {
   background-image: url(./img/debugduck.png);
+  background-position: center;
   background-size: cover;
   color: transparent;
 }
 
 .projects #pixelarticle {
-  background: #2fd6af;
+  background: #ffce00;
+  -webkit-transition: background-image 0s ease;
+  transition: background-image 0s ease;
 }
 
 .projects #pixelarticle:hover {
   background-image: url(./img/pixelart.jpeg);
+  background-position: center;
   background-size: cover;
   color: transparent;
 }
