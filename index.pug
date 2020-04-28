@@ -8,7 +8,19 @@ html(lang="en")
         title Louise Flanagan
     body
         header
-            include ./includes/nav.pug
+            - const urls = {github: 'https://github.com/Lou-Flan', twitter: 'https://twitter.com/FlangerHanger', linkedin: 'https://www.linkedin.com/in/louise-flanagan/', codepen: 'https://codepen.io/louflan', email: 'mailto:louise_flanagan@outlook.com?Subject=Hi%20Louise'}
+            nav
+                ul#navList
+                    li#left: #rainbow-container: #outer.run-animation
+                        #yellow
+                        #pink
+                        #green
+                        #inner
+                    li: a(href='../index.html') about
+                    li: a(href=urls.github target='blank') 🔗github
+                    li: a(href=urls.linkedin target='blank') 🔗linkedin
+                    li: a(href=urls.twitter target='blank') 🔗twitter
+                    li: a(href=urls.codepen target='blank') 🔗codepen
         .container#container
             h1#title.title hi.
             h2 i'm louise, full stack dev
