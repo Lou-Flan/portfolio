@@ -12,12 +12,46 @@ html(lang="en")
         .container#container
             h1#project-title.title pikachu animation
             h2 pug scss
+            .link: a(href="https://codepen.io/louflan/pen/YzXvVPx?editors=1100", target="_blank", rel="noopener noreferrer") codepen
             .projects
-                .media-container
-                    video(src="../img/pikachu.mp4" type="video/mp4" autoplay loop) 
-                .media-container
-                    iframe(scrolling="no" title="sleepy pikachu animation" src="https://codepen.io/louflan/embed/YzXvVPx?height=265&theme-id=light&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy")
                 p.description.
                     #[span Touch Pikachu's forehead to start the animation#[br]#[br]]
+            .pikachu-container
+                .box
+                    .head
+                        .head-top
+                        .eyelids
+                            .left-lid 
+                            .right-lid
+                        .mouth-cover
+                            span
+                            #top-z z
+                            #middle-z z
+                            #bottom-z z
+                        .head-bottom
+                            .cheek-left 
+                            .cheek-right
+                            .mouth
+                                #left 
+                                #right 
+                                .tongue 
+                        .ear-left
+                            .inner-ear
+                        .ear-right
+                            .inner-ear
+                        .eye-left
+                            .pupil
+                        .eye-right
+                            .pupil
+                        .nose
+                    .rings
+                        .pikachu-body
+                        .tail-bottom
+                    .tail
+                    ul
+                        li
+                        li
+                        //- li
+                    //- iframe(scrolling="no" title="sleepy pikachu animation" src="https://codepen.io/louflan/embed/YzXvVPx?height=265&theme-id=light&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy")
         include ./footer.pug
     script(src='./script.js')

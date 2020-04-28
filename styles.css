@@ -188,6 +188,405 @@
   }
 }
 
+.pikachu-container {
+  width: 100%;
+  height: 65vh;
+  background: #d5fded;
+}
+
+.pikachu-container .box {
+  width: 460px;
+  height: 350px;
+  position: absolute;
+  background: transparent;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 65%;
+}
+
+.pikachu-container .head {
+  position: absolute;
+  background: #ffc720;
+  width: 50%;
+  height: 67%;
+  top: 16.5%;
+  left: 25%;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.pikachu-container .head .head-top {
+  position: absolute;
+  background: #ffc720;
+  width: 90%;
+  height: 100%;
+  left: 5%;
+  border-radius: 43%;
+  z-index: 2;
+}
+
+.pikachu-container .head .eyelids {
+  position: absolute;
+  background: #ffc720;
+  width: 70%;
+  height: 30%;
+  top: 30%;
+  left: 15%;
+  visibility: hidden;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.pikachu-container .left-lid, .pikachu-container .right-lid {
+  position: absolute;
+  background: #ffc720;
+  width: 30%;
+  height: 10%;
+  background: black;
+  border-radius: 30% 30% 50% 50%;
+  bottom: 25%;
+}
+
+.pikachu-container .left-lid {
+  left: 4%;
+}
+
+.pikachu-container .right-lid {
+  right: 4%;
+}
+
+.pikachu-container .head-top:hover ~ .eyelids,
+.pikachu-container head-top:active {
+  visibility: visible;
+  -webkit-transition: visibility 2s ease;
+  transition: visibility 2s ease;
+}
+
+.pikachu-container .head-top:hover ~ .mouth-cover,
+.pikachu-container head-top:active {
+  visibility: visible;
+}
+
+.pikachu-container .head-bottom {
+  position: absolute;
+  background: #ffc720;
+  width: 100%;
+  height: 70%;
+  top: 40%;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.pikachu-container .ear-left, .pikachu-container .ear-right {
+  position: absolute;
+  background: #ffc720;
+  width: 30%;
+  height: 70%;
+  border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
+  bottom: 70%;
+  z-index: 1;
+}
+
+.pikachu-container .ear-left {
+  left: -20%;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
+.pikachu-container .ear-right {
+  right: -20%;
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
+}
+
+.pikachu-container .inner-ear {
+  position: absolute;
+  background: #ffc720;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  -webkit-clip-path: polygon(0 0, 80% 0%, 0% 60%);
+  clip-path: polygon(0 0, 80% 0%, 0% 60%);
+  border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
+  background: black;
+}
+
+.pikachu-container .eye-left, .pikachu-container .eye-right {
+  position: absolute;
+  background: #ffc720;
+  width: 20%;
+  height: 23%;
+  top: 35%;
+  background: black;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.pikachu-container .eye-left {
+  left: 15%;
+}
+
+.pikachu-container .eye-right {
+  right: 15%;
+}
+
+.pikachu-container .pupil {
+  position: absolute;
+  background: #ffc720;
+  width: 38%;
+  height: 38%;
+  top: 15%;
+  left: 46%;
+  border-radius: 50%;
+  background: white;
+}
+
+.pikachu-container .nose {
+  position: absolute;
+  background: #ffc720;
+  width: 5%;
+  height: 5%;
+  top: 60%;
+  left: 47%;
+  background: black;
+  border-radius: 30% 30% 50% 50%;
+  z-index: 4;
+}
+
+.pikachu-container .cheek-left {
+  position: absolute;
+  background: #ffc720;
+  width: 15%;
+  height: 40%;
+  top: 30%;
+  -webkit-clip-path: ellipse(100% 50% at left);
+  clip-path: ellipse(100% 50% at left);
+  border-radius: 48%;
+  background: red;
+  z-index: 5;
+}
+
+.pikachu-container .cheek-right {
+  position: absolute;
+  background: #ffc720;
+  width: 15%;
+  height: 40%;
+  top: 30%;
+  right: 0%;
+  -webkit-clip-path: ellipse(100% 50% at right);
+  clip-path: ellipse(100% 50% at right);
+  border-radius: 48%;
+  background: red;
+  z-index: 5;
+}
+
+.pikachu-container .mouth {
+  position: absolute;
+  background: #ffc720;
+  width: 30%;
+  height: 40%;
+  top: 45%;
+  left: 34%;
+  background: #a6150c;
+  border-radius: 50% 50% 51% 49% / 25% 24% 76% 75%;
+}
+
+.pikachu-container .tongue {
+  position: absolute;
+  background: #ffc720;
+  width: 87%;
+  height: 60%;
+  left: 6%;
+  background: #eb9099;
+  bottom: 0%;
+  border-radius: 50% 50% 51% 49% / 25% 24% 76% 75%;
+}
+
+.pikachu-container #left, .pikachu-container #right {
+  position: absolute;
+  background: #ffc720;
+  width: 60%;
+  height: 30%;
+  top: -10%;
+  background: #ffc720;
+  border-radius: 0% 30% 50% 30%;
+}
+
+.pikachu-container #right {
+  right: 0%;
+}
+
+.pikachu-container .pikachu-body {
+  position: absolute;
+  background: #ffc720;
+  width: 60%;
+  height: 35%;
+  left: 25%;
+  bottom: -10%;
+  border-radius: 30% 30% 0% 0% / 70% 70% 0 0;
+}
+
+.pikachu-container .rings {
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background: white;
+  border-radius: 50%;
+  z-index: -1;
+  border: 1em solid white;
+  overflow: hidden;
+}
+
+.pikachu-container .tail-bottom {
+  position: absolute;
+  background: #ffc720;
+  width: 10%;
+  height: 50%;
+  top: 63%;
+  right: 9.5%;
+  clip-path: polygon(62% 54%, 10% 22%, 86% 11%, 100% 43%);
+  -webkit-clip-path: polygon(62% 54%, 10% 22%, 86% 11%, 100% 43%);
+}
+
+.pikachu-container ul {
+  list-style: none;
+}
+
+.pikachu-container .tail {
+  position: absolute;
+  background: #ffc720;
+  width: 40%;
+  height: 35%;
+  top: 45%;
+  right: -20%;
+  clip-path: polygon(30% 64%, 0 37%, 100% 0, 100% 58%);
+  -webkit-clip-path: polygon(30% 64%, 0 37%, 100% 0, 100% 58%);
+}
+
+.pikachu-container li:nth-child(1) {
+  position: absolute;
+  background: #ffc720;
+  width: 30%;
+  height: 35%;
+  top: 44%;
+  right: -9%;
+  clip-path: polygon(35% 100%, 0 39%, 30% 33%, 60% 100%);
+  -webkit-clip-path: polygon(35% 100%, 0 39%, 30% 33%, 60% 100%);
+}
+
+.pikachu-container li:nth-child(2) {
+  position: absolute;
+  background: #ffc720;
+  width: 25%;
+  height: 20%;
+  top: 69%;
+  right: 3%;
+  clip-path: polygon(30% 64%, 20% 20%, 80% 10%, 100% 50%);
+  -webkit-clip-path: polygon(30% 64%, 20% 20%, 80% 10%, 100% 50%);
+}
+
+.pikachu-container li:nth-child(3) {
+  position: absolute;
+  background: #ffc720;
+  width: 10%;
+  height: 50%;
+  top: 69%;
+  right: 12%;
+  clip-path: polygon(62% 54%, 10% 22%, 86% 11%, 100% 43%);
+  -webkit-clip-path: polygon(62% 54%, 10% 22%, 86% 11%, 100% 43%);
+}
+
+.pikachu-container .mouth-cover {
+  visibility: hidden;
+  position: absolute;
+  background: #ffc720;
+  width: 50%;
+  height: 50%;
+  top: 65%;
+  right: 16%;
+  z-index: 10;
+}
+
+.pikachu-container .mouth-cover span {
+  position: absolute;
+  background: #ffc720;
+  width: 20%;
+  height: 20%;
+  top: 30%;
+  right: 56%;
+  z-index: 12;
+  background: black;
+  border-radius: 50%;
+}
+
+.pikachu-container .mouth-cover #top-z {
+  position: absolute;
+  background: #ffc720;
+  width: 50%;
+  height: 50%;
+  top: -60%;
+  left: -150%;
+  background: transparent;
+  -webkit-animation: zzz 4s infinite;
+          animation: zzz 4s infinite;
+}
+
+.pikachu-container .mouth-cover #middle-z {
+  position: absolute;
+  background: #ffc720;
+  width: 50%;
+  height: 50%;
+  top: 0%;
+  left: -100%;
+  background: transparent;
+  -webkit-animation: zzz 3s infinite;
+          animation: zzz 3s infinite;
+}
+
+.pikachu-container .mouth-cover #bottom-z {
+  position: absolute;
+  background: #ffc720;
+  width: 50%;
+  height: 50%;
+  top: 15%;
+  background: transparent;
+  -webkit-animation: zzz 2s infinite;
+          animation: zzz 2s infinite;
+}
+
+@-webkit-keyframes zzz {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.5) translate(-200%, -3em);
+            transform: scale(0.5) translate(-200%, -3em);
+  }
+}
+
+@keyframes zzz {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.5) translate(-200%, -3em);
+            transform: scale(0.5) translate(-200%, -3em);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -242,7 +641,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  nav #navList #left {
+  nav #navList #left, nav #navList .pikachu-container #right, .pikachu-container nav #navList #right {
     display: none;
   }
   .container {
@@ -257,7 +656,7 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  nav #navList #left {
+  nav #navList #left, nav #navList .pikachu-container #right, .pikachu-container nav #navList #right {
     display: block;
   }
   .container {
@@ -272,7 +671,7 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  nav #navList #left {
+  nav #navList #left, nav #navList .pikachu-container #right, .pikachu-container nav #navList #right {
     display: block;
   }
   .container {
@@ -293,7 +692,7 @@ header nav, footer nav {
   width: 100%;
 }
 
-header nav #left, footer nav #left {
+header nav #left, footer nav #left, header nav .pikachu-container #right, .pikachu-container header nav #right, footer nav .pikachu-container #right, .pikachu-container footer nav #right {
   -webkit-box-flex: 10;
       -ms-flex: 10;
           flex: 10;
