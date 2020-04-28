@@ -19,7 +19,7 @@ html(lang="en")
 
                     I am going to walk you through my process of creating Link (Zelda) and show you how to make your own pixel art.
                 
-                iframe(height="500" scrolling="yes" title="Pixel-Link" src="https://codepen.io/louflan/embed/mdJKRWN?height=265&theme-id=light&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy")
+                iframe(scrolling="yes" title="Pixel-Link" src="https://codepen.io/louflan/embed/mdJKRWN?height=265&theme-id=light&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy")
 
                 p.description.
                     First things first, find an image either already in pixels or that you can easily convert as a reference. You will want to be able to count the number of pixels across and down so you can keep track of where you are. I chose this image of link because I could already see the pixels.#[br]#[br]
@@ -42,13 +42,13 @@ html(lang="en")
                     The first em value in the box-shadow is the X axis, this value increases as you go across the image to the right. The second em is the Y axis, this value will increase as you go down the image. The last property is the colour of that shadow (in our case, the colour of a pixel).
                     We are basically going to move across the image, pixel by pixel, specifying what colour that pixel should be using the box-shadow. Once a line is complete, we then move down a line and repeat the process until the entire image is complete.#[br]#[br]
                     The background colour of my image is white so I have not set the box-shadow property for the background of the image as it will be white by default. If you look at the Codepen below, you should see one black pixel on the page.
-                iframe(height="265" scrolling="no" title="pixel-link-1" src="https://codepen.io/louflan/embed/KKpeaym?height=265&theme-id=light&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy")
+                iframe(scrolling="no" title="pixel-link-1" src="https://codepen.io/louflan/embed/KKpeaym?height=265&theme-id=light&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy")
                 p.description.
                     The box-shadow property in my pixel class is as follows:
                     #[span box-shadow: 8em 1em $outline;]#[br]#[br]
                     I have gone straight to the 8th pixel along on the 1st row down and set the colour to be $outline which is black. In the first row of my image, this is the first pixel that is not background and is part of Link’s outline.#[br]#[br]
                     The next block of code shows the completion of the first row and then the second. After each pixel, just increase the first em value by one to move one pixel right and set the colour. When you have reached the end, increase the second em value by one to move down a line and start again at the beginning of the line. Now you will probably see why an image reference with pixels is helpful 😉.
-                iframe(height="265" scrolling="no" title="pixel-link-2" src="https://codepen.io/louflan/embed/jOPKyYB?height=265&theme-id=light&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy")
+                iframe(scrolling="no" title="pixel-link-2" src="https://codepen.io/louflan/embed/jOPKyYB?height=265&theme-id=light&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy")
                 p.description.
                     Continue to add box-shadow properties to create the entire image. I’m sure there are DRYer ways of creating pixel art but this works!#[br]#[br]
 
