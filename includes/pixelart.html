@@ -37,35 +37,42 @@
         <p class="description">I recently learned how to create pixel images with the power of css and two divs. That's right, TWO divs! When I had seen these in the past, I imagined that the pixels would be made up of lots of little HTML divs and a lot of positioning but alas there is always another way.<br><br>
           
           I am going to walk you through my process of creating Link (Zelda) and show you how to make your own pixel art.
-          
         </p>
-        <iframe scrolling="yes" title="Pixel-Link" src="https://codepen.io/louflan/embed/mdJKRWN?height=265&amp;theme-id=light&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy"></iframe>
+        <div class="media-container">
+          <iframe scrolling="yes" title="Pixel-Link" src="https://codepen.io/louflan/embed/mdJKRWN?height=265&amp;theme-id=light&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy"></iframe>
+        </div>
         <p class="description">First things first, find an image either already in pixels or that you can easily convert as a reference. You will want to be able to count the number of pixels across and down so you can keep track of where you are. I chose this image of link because I could already see the pixels.<br><br>
           
           Set up your files; I am using SCSS here but you can do it in CSS just as easily (just take out the colour variables for css). I usually use VS Code with the live viewer extension and the following command so I can see my changes in my browser every time I hit save in my SCSS file.<br><br>
           
           Your HTML file should have a div within a div as below. Give both of these divs a css class; pixel-container and pixel (or whatever floats your boat 🤗).<br><br>
-          
-        </p><img src="../img/pixel3.png" alt="">
-        <p class="description">Jump over to your style sheet. I have set up the styling for the classes in my SCSS file along with variables for colours so I can easily change a colour for another at a later date if I want to. You don’t have to setup up the variables but you do need the classes.<br><br></p><img src="../img/pixel4.png" alt="">
+        </p>
+        <div class="media-container"><img src="../img/pixel3.png" alt=""></div>
+        <p class="description">Jump over to your style sheet. I have set up the styling for the classes in my SCSS file along with variables for colours so I can easily change a colour for another at a later date if I want to. You don’t have to setup up the variables but you do need the classes.<br><br></p>
+        <div class="media-container"><img src="../img/pixel4.png" alt=""></div>
         <p class="description">
           The first class, pixel-container, is applied to the div container that holds the entire image. The size of this needs to be set to reflect the entire image size.
           The second class, pixel, is applied to the div within the pixel-container and is going to make the pixel we will be working with. Set the size of the pixel to 1em x 1em. We are going to use the box-shadow property with multiple values on this pixel to create the pixel image.
           The syntax for box-shadow is as follows:
-        </p><img src="../img/pixel2.png" alt="">
+        </p>
+        <div class="media-container"><img src="../img/pixel2.png" alt=""></div>
         <p class="description">
           The first em value in the box-shadow is the X axis, this value increases as you go across the image to the right. The second em is the Y axis, this value will increase as you go down the image. The last property is the colour of that shadow (in our case, the colour of a pixel).
           We are basically going to move across the image, pixel by pixel, specifying what colour that pixel should be using the box-shadow. Once a line is complete, we then move down a line and repeat the process until the entire image is complete.<br><br>
           The background colour of my image is white so I have not set the box-shadow property for the background of the image as it will be white by default. If you look at the Codepen below, you should see one black pixel on the page.
         </p>
-        <iframe scrolling="no" title="pixel-link-1" src="https://codepen.io/louflan/embed/KKpeaym?height=265&amp;theme-id=light&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy"></iframe>
+        <div class="media-container">
+          <iframe scrolling="no" title="pixel-link-1" src="https://codepen.io/louflan/embed/KKpeaym?height=265&amp;theme-id=light&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy"></iframe>
+        </div>
         <p class="description">
           The box-shadow property in my pixel class is as follows:
           <span>box-shadow: 8em 1em $outline;</span><br><br>
           I have gone straight to the 8th pixel along on the 1st row down and set the colour to be $outline which is black. In the first row of my image, this is the first pixel that is not background and is part of Link’s outline.<br><br>
           The next block of code shows the completion of the first row and then the second. After each pixel, just increase the first em value by one to move one pixel right and set the colour. When you have reached the end, increase the second em value by one to move down a line and start again at the beginning of the line. Now you will probably see why an image reference with pixels is helpful 😉.
         </p>
-        <iframe scrolling="no" title="pixel-link-2" src="https://codepen.io/louflan/embed/jOPKyYB?height=265&amp;theme-id=light&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy"></iframe>
+        <div class="media-container">
+          <iframe scrolling="no" title="pixel-link-2" src="https://codepen.io/louflan/embed/jOPKyYB?height=265&amp;theme-id=light&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy"></iframe>
+        </div>
         <p class="description">Continue to add box-shadow properties to create the entire image. I’m sure there are DRYer ways of creating pixel art but this works!<br><br>
           
           This is my first tutorial/article, let me know how I went 😅
