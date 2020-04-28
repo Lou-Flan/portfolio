@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel='stylesheet', href='../styles.css')
+        title pikachu
+    body
+        header
+            include ./nav.pug
+        .container#container
+            h1#project-title.title link css art
+            h2 html css
+            .link: a(href="https://codepen.io/louflan/pen/PoPzqLV", target="_blank", rel="noopener noreferrer") codepen
+            .projects
+            #link-container
+                .link-container
+                    .hat
+                    .head
+                        #shade
+                        .hair
+                        .pig-tails
+                        .hair-right
+                        .hair-right.left
+                        .face
+                            .eyebrows
+                            .eyes
+                        .left-ear
+                        .right-ear
+                    .arm-left
+                    .arm-right
+                    .hand-left
+                    .hand-right
+                    .link-body
+                        .neck
+                    .sword
+                    .hilt
+                    .tip
+                    .legs
+                    .boots
+                        .toe
+        include ./footer.pug
+    script(src='./script.js')
