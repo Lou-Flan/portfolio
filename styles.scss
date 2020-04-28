@@ -263,8 +263,9 @@ span {
 
 @media only screen and (max-width: 600px) {
   img {
-    width: 90vw;
-    height: auto;
+    // width: 90vw;
+    // height: auto;
+    object-fit: contain;
   }
   #project-title {
     font-size: 3em;
@@ -273,8 +274,9 @@ span {
 
 @media only screen and (min-width: 600px) {
   img {
-    width: 100%;
-    height: auto;
+    // width: 100%;
+    // height: auto;
+    object-fit: contain;
   }
   .description {
     width: 60vw;
@@ -283,9 +285,9 @@ span {
 
 @media only screen and (min-width: 1200px) {
   img {
-    width: 50%;
+    // width: 50%;
     object-fit: contain;
-    height: auto;
+    // height: auto;
     // order: 1;
   }
   .description {
