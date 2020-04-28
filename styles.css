@@ -191,13 +191,14 @@
 .pikachu-container {
   width: 100%;
   height: 65vh;
+  position: relative;
   background: #d5fded;
 }
 
 .pikachu-container .box {
   width: 460px;
   height: 350px;
-  position: absolute;
+  position: relative;
   background: transparent;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -440,6 +441,22 @@
   z-index: -1;
   border: 1em solid white;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .pikachu-container .pikachu-container {
+    height: 30vh;
+  }
+  .pikachu-container .box {
+    width: 207px;
+    height: 155px;
+    left: 45%;
+    top: 35%;
+  }
+  .pikachu-container .rings {
+    width: 220px;
+    height: 220px;
+  }
 }
 
 .pikachu-container .tail-bottom {
