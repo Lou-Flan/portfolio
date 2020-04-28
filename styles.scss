@@ -208,6 +208,12 @@ span {
   margin-top: 5%;
   @include flex(row, flex-start);
 
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
   a {
       text-decoration: none;
       color: $white;
@@ -262,34 +268,34 @@ span {
 }
 
 @media only screen and (max-width: 600px) {
-  img {
-    // width: 90vw;
-    // height: auto;
-    object-fit: contain;
-  }
+  // img {
+  //   // width: 90vw;
+  //   // height: auto;
+  //   object-fit: contain;
+  // }
   #project-title {
     font-size: 3em;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  img {
-    // width: 100%;
-    // height: auto;
-    object-fit: contain;
-  }
+  // img {
+  //   // width: 100%;
+  //   // height: auto;
+  //   object-fit: contain;
+  // }
   .description {
     width: 60vw;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  img {
-    // width: 50%;
-    object-fit: contain;
-    // height: auto;
-    // order: 1;
-  }
+  // img {
+  //   // width: 50%;
+  //   object-fit: contain;
+  //   // height: auto;
+  //   // order: 1;
+  // }
   .description {
     width: 50vw;
     // order: 2;

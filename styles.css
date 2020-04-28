@@ -442,6 +442,13 @@ span:hover {
           flex-direction: row;
 }
 
+.projects img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .projects a {
   text-decoration: none;
   color: white;
@@ -545,32 +552,18 @@ span:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  img {
-    width: 90vw;
-    height: auto;
-  }
   #project-title {
     font-size: 3em;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  img {
-    width: 100%;
-    height: auto;
-  }
   .description {
     width: 60vw;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  img {
-    width: 50%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    height: auto;
-  }
   .description {
     width: 50vw;
   }
