@@ -17,17 +17,17 @@ html(lang="en")
                         #green
                         #inner
                     li: a(href='./index.html') about
-                    li: a(href=urls.github target='blank') 🔗github
-                    li: a(href=urls.linkedin target='blank') 🔗linkedin
-                    li: a(href=urls.twitter target='blank') 🔗twitter
-                    li: a(href=urls.codepen target='blank') 🔗codepen
+                    li: a(href=urls.github target='blank' rel="noopener noreferrer") 🔗github
+                    li: a(href=urls.linkedin target='blank' rel="noopener noreferrer") 🔗linkedin
+                    li: a(href=urls.twitter target='blank' rel="noopener noreferrer") 🔗twitter
+                    li: a(href=urls.codepen target='blank' rel="noopener noreferrer") 🔗codepen
         .container#container
             h1#title.title hi.
             h2 i'm louise, full stack dev
             p#bio.
                 I'm a full stack student at Coder Academy Sydney and I'm looking for my first dev role. I love
-                creating with code; you can see my passion in my projects below, on #[a(href=urls.github, target="_blank") GitHub] and #[a(href=urls.codepen, target="_blank") CodePen]. If you
-                like what you see, please #[a(href=urls.email, target="_top") say hello] or chat with me on #[a(href=urls.twitter, target="_blank") twitter] ☺️
+                creating with code; you can see my passion in my projects below, on #[a(href=urls.github, target="_blank" rel="noopener noreferrer") GitHub] and #[a(href=urls.codepen, target="_blank" rel="noopener noreferrer") CodePen]. If you
+                like what you see, please #[a(href=urls.email, target="_top") say hello] or chat with me on #[a(href=urls.twitter, target="_blank" rel="noopener noreferrer") twitter] ☺️
             .projects
                 a(href="./includes/pikachu.html")
                     #pikachu
@@ -66,7 +66,7 @@ html(lang="en")
                         ul.categories
                             li css
                             li tutorial
-                a(href="https://lou-flan.github.io/old-portfolio-site/")
+                a(href="https://lou-flan.github.io/old-portfolio-site/" rel="noopener noreferrer")
                     #archive 
                         p.resource archive 
                         h3 old portfolios
