@@ -1368,8 +1368,8 @@ span:hover {
   display: inline-block;
 }
 
-.projects div .categories li::after,
-.projects div .resource li::after {
+.projects div .categories li:after,
+.projects div .resource li:after {
   content: " | ";
 }
 
@@ -1441,6 +1441,19 @@ span:hover {
 
 .projects #pixelarticle:hover {
   background-image: url(./img/pixelart.jpeg);
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+}
+
+.projects #botdog {
+  background: #ff3675;
+  -webkit-transition: background-image 0s ease;
+  transition: background-image 0s ease;
+}
+
+.projects #botdog:hover {
+  background-image: url(./img/botdog.png);
   background-position: center;
   background-size: cover;
   color: transparent;

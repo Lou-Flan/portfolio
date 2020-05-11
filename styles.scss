@@ -245,7 +245,7 @@ span {
       padding-top: 1rem;
       li {
         display: inline-block;
-        &::after {
+        &:after {
           content: " | ";
         }
       }
@@ -274,6 +274,9 @@ span {
   }
   #pixelarticle {
     @include bgcolour($yellow, "./img/pixelart.jpeg");
+  }
+  #botdog {
+    @include bgcolour($pink, "./img/botdog.png");
   }
 }
 
