@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel='stylesheet', href='../styles.css')
+        title random pokemon generator
+    body
+        header
+            include ./nav.pug
+        .container#container
+            h1#project-title.title random pokemon generator
+            h2 javascript scss pug
+            .link: a(href="https://github.com/Lou-Flan/pokecard-generator", target="_blank", rel="noopener noreferrer") github & docs 
+                a(href="https://lou-flan.github.io/pokecard-generator/", target="_blank", rel="noopener noreferrer") deployed site
+            .projects
+             p.description.
+                    #[span click the middle of the pokeball to generate a random pokemon card then click the card to put it back#[br]#[br]]
+            .codepen-container
+                p.codepen(data-height="265" data-theme-id="light" data-default-tab="result" data-user="louflan" data-slug-hash="PoZoKZG" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="pokemon-card-generator-2.0")
+                script(async src="https://static.codepen.io/assets/embed/ei.js")
+                p.description.
+                    This is a working project that I am always adding to and improving.#[br]
+                
+        include ./footer.pug
+    script(src='./script.js')

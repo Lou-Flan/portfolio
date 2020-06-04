@@ -29,7 +29,15 @@ html(lang="en")
                 creating with code; you can see my passion in my projects below, on #[a(href=urls.github, target="_blank" rel="noopener noreferrer") GitHub] and #[a(href=urls.codepen, target="_blank" rel="noopener noreferrer") CodePen]. If you
                 like what you see, please #[a(href=urls.email, target="_top") say hello] or chat with me on #[a(href=urls.twitter, target="_blank" rel="noopener noreferrer") twitter] ☺️
             .projects
-                a(href="./includes/pikachu.html")
+                a(href="./mario.html")
+                    #mario
+                        p.resource ♡ picked by codepen 
+                        h3 mario & luigi
+                        ul.categories
+                            li css
+                            li pug
+                            li front-end
+                a(href="./pikachu.html")
                     #pikachu
                         p.resource ♡ picked by codepen 
                         h3 pikachu art
@@ -37,7 +45,7 @@ html(lang="en")
                             li css
                             li animation
                             li front-end
-                a(href="./includes/devduckswap.html") 
+                a(href="./devduckswap.html") 
                     #devduckswap
                         p.resource deployed site 
                         h3 dev duck swap marketplace
@@ -45,27 +53,35 @@ html(lang="en")
                             li ruby
                             li ruby on rails
                             li full-stack
-                a(href="./includes/link.html")
+                a(href="./link.html")
                     #linkart 
                         p.resource ♡ picked by codepen 
                         h3 gradient art link
                         ul.categories
                             li css
                             li front-end
-                a(href="./includes/botdog.html")
+                a(href="./botdog.html")
                     #botdog 
                         p.resource terminal app 
                         h3 bot-dog
                         ul.categories
                             li ruby
                             li terminal
-                a(href="./includes/pixelart.html")
+                a(href="./pixelart.html")
                     #pixelarticle 
                         p.resource dev.to article 
                         h3 beginner pixel art
                         ul.categories
                             li css
                             li tutorial
+                a(href="./pokemon-generator.html")
+                    #pokemon-card 
+                        p.resource deployed site 
+                        h3 random pokemon generator
+                        ul.categories
+                            li api
+                            li javascript
+                            li animation
                 a(href="https://lou-flan.github.io/old-portfolio-site/" rel="noopener noreferrer")
                     #archive 
                         p.resource archive 
@@ -73,5 +89,5 @@ html(lang="en")
                         ul.categories
                             li css
                             li html
-        include ./includes/footer.pug
+        include ./footer.pug
 script(src='./includes/script.js')

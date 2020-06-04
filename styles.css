@@ -1382,13 +1382,26 @@ span:hover {
 }
 
 .projects #pikachu {
-  background: #2fd6af;
+  background: #ffce00;
   -webkit-transition: background-image 0s ease;
   transition: background-image 0s ease;
 }
 
 .projects #pikachu:hover {
   background-image: url(./img/pikachu.png);
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+}
+
+.projects #mario {
+  background: #2fd6af;
+  -webkit-transition: background-image 0s ease;
+  transition: background-image 0s ease;
+}
+
+.projects #mario:hover {
+  background-image: url(./img/mario.png);
   background-position: center;
   background-size: cover;
   color: transparent;
@@ -1454,6 +1467,19 @@ span:hover {
 
 .projects #botdog:hover {
   background-image: url(./img/botdog.png);
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+}
+
+.projects #pokemon-card {
+  background: #2fd6af;
+  -webkit-transition: background-image 0s ease;
+  transition: background-image 0s ease;
+}
+
+.projects #pokemon-card:hover {
+  background-image: url(./img/pokecard.png);
   background-position: center;
   background-size: cover;
   color: transparent;

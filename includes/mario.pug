@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel='stylesheet', href='../styles.css')
+        title mario & luigi
+    body
+        header
+            include ./nav.pug
+        .container#container
+            h1#project-title.title mario & luigi
+            h2 pug scss
+            
+            .projects
+             p.description.
+                    #[span Responsive CSS art using a number of techniques including variables and scss mixins#[br]#[br]]
+            .mario-container
+                p.codepen(data-height="565" data-theme-id="light" data-default-tab="result" data-user="louflan" data-slug-hash="BaoJpwX" style="height: 565px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="scssuper mario face")
+                script(async src="https://static.codepen.io/assets/embed/ei.js")
+            .luigi-container
+                p.codepen(data-height="265" data-theme-id="light" data-default-tab="result" data-user="louflan" data-slug-hash="RwWOWbp" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="scss luigi ")
+                script(async src="https://static.codepen.io/assets/embed/ei.js")
+        include ./footer.pug
+    script(src='./script.js')

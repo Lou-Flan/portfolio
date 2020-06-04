@@ -261,7 +261,10 @@ span {
   }
 
   #pikachu {
-    @include bgcolour($green, "./img/pikachu.png");
+    @include bgcolour($yellow, "./img/pikachu.png");
+  }
+  #mario {
+    @include bgcolour($green, "./img/mario.png");
   }
   #devduckswap {
     @include bgcolour($pink, "./img/dds1.png");
@@ -277,6 +280,9 @@ span {
   }
   #botdog {
     @include bgcolour($pink, "./img/botdog.png");
+  }
+  #pokemon-card {
+    @include bgcolour($green, "./img/pokecard.png");
   }
 }
 
