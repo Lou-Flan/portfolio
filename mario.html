@@ -33,16 +33,22 @@
       <h1 class="title" id="project-title">mario & luigi</h1>
       <h2>pug scss</h2>
       <div class="projects">
-        <p class="description"><span>Responsive CSS art using a number of techniques including variables and scss mixins<br><br></span></p>
+        <p class="description"><span>TLDR:</span> I love to push boundaries with CSS and after creating my <span><a id="black" href="./link.html">css link</a></span>, I wanted to see if I could challenge myself and go a step further. My requirements: SCSS only, no JS or libraries and responsive.</p>
       </div>
       <div class="mario-container">
         <p class="codepen" data-height="565" data-theme-id="light" data-default-tab="result" data-user="louflan" data-slug-hash="BaoJpwX" style="height: 565px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="scssuper mario face"></p>
         <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
       </div>
+      <p class="description">This would’ve been completed much faster in SVG but I really wanted to take the time to see if I could do this with CSS. </p>
+      <div class="description">There are a number of techniques at play in both of these creations. I made particularly good friends with border-radius to create nice curves and smooth edges. But, understanding the order of the elements, their positioning and how they can be used to imply shapes is what allowed me to create more complex angles.</div>
+      <div class="description">For example, the moustache is made of styled spans that slightly overlap each other. The spans are z-indexed behind an oval shaped div across the top of the face which creates the curve across the top of the moustache. The same applies with the arc for the bottom of the eyebrows, this is implied with the placement of a span across the bottom of each eye-brow.</div>
+      <div class="description">To make the images responsive, I used css variables to define a size and unit size based on 1vmin. The container width and height then use calc to scale up and down based on the size of the unit. The child elements are all set with absolute positioning and percentages to maintain responsiveness.</div>
       <div class="luigi-container">
         <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="result" data-user="louflan" data-slug-hash="RwWOWbp" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="scss luigi "></p>
         <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
       </div>
+      <p class="description">When it came to creating Luigi, I wanted to expand upon what I hard learned with Mario and make better use of SCSS to keep my code more DRY. I made use of mixins and extends to avoid writing  the same code multiple times.</p>
+      <p class="description"><span>Final thoughts</span>: CSS art takes time, order of elements is important, gradients are amazing and it's fun!</p>
     </div>
     <footer>   
       <nav>

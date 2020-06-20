@@ -1337,6 +1337,10 @@ span:hover {
           flex: 1 1 25ch;
 }
 
+.projects #black {
+  color: black;
+}
+
 .projects div {
   display: -webkit-box;
   display: -ms-flexbox;
