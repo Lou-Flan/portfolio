@@ -1172,6 +1172,10 @@ header nav #left, footer nav #left, header nav .pikachu-container #right, .pikac
           flex: 10;
 }
 
+header nav #left:hover, footer nav #left:hover, header nav .pikachu-container #right:hover, .pikachu-container header nav #right:hover, footer nav .pikachu-container #right:hover, .pikachu-container footer nav #right:hover {
+  background: white;
+}
+
 header nav ul, footer nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1255,7 +1259,7 @@ h2 {
   font-family: "Roboto Mono", monospace;
   font-weight: bolder;
   font-size: 2em;
-  margin: 0.5rem 0;
+  margin: 1.5rem 0;
 }
 
 #bio {

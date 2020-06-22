@@ -15,23 +15,23 @@ html(lang="en")
             
             .projects
              p.description.
-                    #[span TLDR:] I love to push boundaries with CSS and after creating my #[span #[a#black(href="./link.html") css link]], I wanted to see if I could challenge myself and go a step further. My requirements: SCSS only, no JS or libraries and responsive.
+                    #[span TLDR:] I love to push boundaries with CSS and after creating my #[span #[a#black(href="./link.html") css link]], I wanted to see if I could challenge myself and go a step further. My requirements: SCSS only, no JS or libraries and it had to be responsive.
             .mario-container
                 p.codepen(data-height="565" data-theme-id="light" data-default-tab="result" data-user="louflan" data-slug-hash="BaoJpwX" style="height: 565px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="scssuper mario face")
                 script(async src="https://static.codepen.io/assets/embed/ei.js")
             p.description.
                     This would’ve been completed much faster in SVG but I really wanted to take the time to see if I could do this with CSS. 
             .description.
-                    There are a number of techniques at play in both of these creations. I made particularly good friends with border-radius to create nice curves and smooth edges. But, understanding the order of the elements, their positioning and how they can be used to imply shapes is what allowed me to create more complex angles.
+                    There are a number of techniques at play in both of these creations. I made particularly good friends with border-radius to create nice curves but understanding the order of the elements, their positioning and how they can be used to imply shapes is what allowed me to create more complex angles.
             .description.
-                    For example, the moustache is made of styled spans that slightly overlap each other. The spans are z-indexed behind an oval shaped div across the top of the face which creates the curve across the top of the moustache. The same applies with the arc for the bottom of the eyebrows, this is implied with the placement of a span across the bottom of each eye-brow.
+                    For example, Mario's moustache is made of styled spans that slightly overlap each other. The spans are z-indexed behind an oval shaped div across the top of the face behind the eyes which creates the curve across the top of the moustache. The same applies with the arc for the bottom of the eyebrows, the arc is implied with the placement of a span across the bottom of each eye-brow.
             .description.
-                    To make the images responsive, I used css variables to define a size and unit size based on 1vmin. The container width and height then use calc to scale up and down based on the size of the unit. The child elements are all set with absolute positioning and percentages to maintain responsiveness.
+                    To make the images responsive, I used css variables to define a size and unit size based on 1vmin. The art container width and height then use calc to scale up and down based on the size of the unit and all child elements are absolutely positioned with percentages.
             .luigi-container
                 p.codepen(data-height="265" data-theme-id="light" data-default-tab="result" data-user="louflan" data-slug-hash="RwWOWbp" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="scss luigi ")
                 script(async src="https://static.codepen.io/assets/embed/ei.js")
             p.description.
-                    When it came to creating Luigi, I wanted to expand upon what I hard learned with Mario and make better use of SCSS to keep my code more DRY. I made use of mixins and extends to avoid writing  the same code multiple times.
+                    When it came to creating Luigi, I wanted to expand upon what I hard learned with Mario and make better use of SCSS to keep my code more DRY. I used a number of mixins and extends to avoid writing the same code multiple times.
             p.description.
                     #[span Final thoughts]: CSS art takes time, order of elements is important, gradients are amazing and it's fun!
         include ./footer.pug

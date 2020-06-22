@@ -96,6 +96,9 @@ header {
 
     #left {
       flex: 10;
+      &:hover {
+        background: white;
+      }
     }
 
     ul {
@@ -118,6 +121,7 @@ header {
 
         &:hover {
           background: $green;
+        
         }
       }
     }
@@ -153,7 +157,7 @@ h2 {
   font-family: $sub-heading-font;
   font-weight: bolder;
   font-size: 2em;
-  margin: 0.5rem 0;
+  margin: 1.5rem 0;
 }
 
 #bio {
