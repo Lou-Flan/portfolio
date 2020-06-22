@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles.css">
+    <title>gsap animations</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="navList">
+          <li id="left">
+            <div id="rainbow-container">
+              <div class="run-animation" id="outer"><a id="yellow" href="../index.html"></a><a id="pink" href="../index.html"></a><a id="green" href="../index.html"></a><a id="inner" href="../index.html"></a></div>
+            </div>
+          </li>
+          <li><a href="../index.html">about</a></li>
+          <li><a href="https://github.com/Lou-Flan" target="blank" rel="noopener noreferrer">🔗github</a></li>
+          <li><a href="https://www.linkedin.com/in/louise-flanagan/" target="blank" rel="noopener noreferrer">🔗linkedin</a></li>
+          <li><a href="https://twitter.com/FlangerHanger" target="blank" rel="noopener noreferrer">🔗twitter</a></li>
+          <li><a href="https://codepen.io/louflan" target="blank" rel="noopener noreferrer">🔗codepen</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container" id="container">
+      <h1 class="title" id="project-title">bubbling gsap animation</h1>
+      <h2>codepen challenge winner</h2>
+      <div class="projects">
+        <p class="description"><span>TLDR:</span> I developed three animations to practice using Greensock and won <span><a id="black" href="https://greensock.com/cpc/">this codepen challenge!</a></span>. The requirements were to create a bubbling animation using GSAP. </p>
+      </div>
+      <div class="luigi-container">
+        <p class="codepen" data-height="565" data-theme-id="light" data-default-tab="result" data-user="louflan" data-slug-hash="WNrrRvy" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="gsap-science"></p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      </div>
+      <p class="description">A bubbling science experiment was the first thing that came to my mind and this was my first attempt at using the gsap library. I drew the image in Figma and created an in-line SVG so I could animate the different layers. The most challenging part of this was creating the sine wave effect on the liquid and I ended up spending more time on this than I did on the bubbles 🤦‍♀️. I was pretty happy with this as my first attempt but no way was I finishing here.</p>
+      <div class="luigi-container">
+        <p class="codepen" data-height="565" data-theme-id="light" data-default-tab="result" data-user="louflan" data-slug-hash="MWKKMOd" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="gsap-bubbly-bath😻"></p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      </div>
+      <p class="description">This seemed like the perfect place to create something that we will never see in real life,  so cue attempt number two; a cat having a bubble bath. I took what I had learned with the science experiment and added more. Getting the timing on the bubble bursts was quite challenging and so my code for this attempt was not DRY at all! I was happy that I had learned new techniques like creating a motion path but again I wanted to push this further and refactor.</p>
+      <div class="mario-container">
+        <p class="codepen" data-height="565" data-theme-id="light" data-default-tab="result" data-user="louflan" data-slug-hash="RwramJb" style="height: 565px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="gsap-bubbly-bath-v2😻"></p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      </div>
+      <p class="description">Third time lucky and we have a winner! I added more bubbles and created functions to randomly generate motion paths and timing for each bubble. I also animated the bath bubbles and the cat's eyes to make it more playful.</p>
+      <p class="description"></p>
+    </div>
+    <footer>   
+      <nav>
+        <ul id="footerList">
+          <li id="left">Louise Flanagan 2020</li>
+          <li>if you loved my work, i'd love for you to get in touch</li>
+          <li><a href="mailto:louise_flanagan@outlook.com?Subject=Hi%20Louise" target="_top">📮 email me   </a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>

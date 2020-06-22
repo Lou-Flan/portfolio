@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel='stylesheet', href='../styles.css')
+        title gsap animations
+    body
+        header
+            include ./nav.pug
+        .container#container
+            h1#project-title.title bubbling gsap animation
+            h2 codepen challenge winner
+            
+            .projects
+             p.description.
+                    #[span TLDR:] I developed three animations to practice using Greensock and won #[span #[a#black(href="https://greensock.com/cpc/") this codepen challenge!]]. The requirements were to create a bubbling animation using GSAP. 
+            .luigi-container
+                p.codepen(data-height="565" data-theme-id="light" data-default-tab="result" data-user="louflan" data-slug-hash="WNrrRvy" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="gsap-science")
+                script(async src="https://static.codepen.io/assets/embed/ei.js")
+            p.description.
+                    A bubbling science experiment was the first thing that came to my mind and this was my first attempt at using the gsap library. I drew the image in Figma and created an in-line SVG so I could animate the different layers. The most challenging part of this was creating the sine wave effect on the liquid and I ended up spending more time on this than I did on the bubbles 🤦‍♀️. I was pretty happy with this as my first attempt but no way was I finishing here.
+            .luigi-container
+                p.codepen(data-height="565" data-theme-id="light" data-default-tab="result" data-user="louflan" data-slug-hash="MWKKMOd" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="gsap-bubbly-bath😻")
+                script(async src="https://static.codepen.io/assets/embed/ei.js")
+            p.description.
+                   This seemed like the perfect place to create something that we will never see in real life,  so cue attempt number two; a cat having a bubble bath. I took what I had learned with the science experiment and added more. Getting the timing on the bubble bursts was quite challenging and so my code for this attempt was not DRY at all! I was happy that I had learned new techniques like creating a motion path but again I wanted to push this further and refactor.
+            .mario-container
+                p.codepen(data-height="565" data-theme-id="light" data-default-tab="result" data-user="louflan" data-slug-hash="RwramJb" style="height: 565px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="gsap-bubbly-bath-v2😻")
+                script(async src="https://static.codepen.io/assets/embed/ei.js")
+            p.description.
+                    Third time lucky and we have a winner! I added more bubbles and created functions to randomly generate motion paths and timing for each bubble. I also animated the bath bubbles and the cat's eyes to make it more playful.
+            p.description.
+                    
+            
+            
+        include ./footer.pug
+    script(src='./script.js')

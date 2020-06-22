@@ -291,6 +291,9 @@ span {
   #pokemon-card {
     @include bgcolour($green, "./img/pokecard.png");
   }
+  #gsap {
+    @include bgcolour($yellow, "./img/gsap.png");
+  }
 }
 
 @media only screen and (max-width: 600px) {

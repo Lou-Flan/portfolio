@@ -1493,6 +1493,19 @@ span:hover {
   color: transparent;
 }
 
+.projects #gsap {
+  background: #ffce00;
+  -webkit-transition: background-image 0s ease;
+  transition: background-image 0s ease;
+}
+
+.projects #gsap:hover {
+  background-image: url(./img/gsap.png);
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+}
+
 @media only screen and (max-width: 600px) {
   #project-title {
     font-size: 3em;
