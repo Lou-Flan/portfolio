@@ -1532,6 +1532,20 @@ span:hover {
   transition: background-image 0s ease;
 }
 
+.projects #novid {
+  background-image: url(./img/novid.png);
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+}
+
+.projects #novid:hover {
+  color: black;
+  background: #ff3675;
+  -webkit-transition: background-image 0s ease;
+  transition: background-image 0s ease;
+}
+
 @media only screen and (max-width: 600px) {
   #project-title {
     font-size: 3em;

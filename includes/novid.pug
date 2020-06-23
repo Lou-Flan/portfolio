@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel='stylesheet', href='../styles.css')
+        title novid news
+    body
+        header
+            include ./nav.pug
+        .container#container
+            h1#project-title.title novid news
+            h2 express, mongo, handlebars
+            .link: a(href="https://github.com/Lou-Flan/novid-news", target="_blank", rel="noopener noreferrer") github & docs 
+                a(href="https://novid-news.herokuapp.com/", target="_blank", rel="noopener noreferrer") deployed site
+            .link: a Louise Flanagan 
+                a(href="https://github.com/catcstevens", target="_blank", rel="noopener noreferrer") Catherine Callcott-Stevens 
+                a(href="https://github.com/igscl", target="_blank", rel="noopener noreferrer") Ignacio Giadach
+                a(href="https://github.com/luisaziccarelli", target="_blank", rel="noopener noreferrer") Luisa Ziccarelli
+            .projects
+                p.description.
+                    #[span TLDR:] An express app developed as part of the Coder Academy hackathon 2020. Theme: Post-pandemic.#[br]#[br]
+                .media-container
+                    img(src="../img/novid.png", alt="novid news homepage")
+                p.description.
+                    The overload of coronavirus content in the news recently has had a negative impact on mental health (i.e anxiety, isolation, problems sleeping, etc.).#[br]#[br]
+
+                .media-container
+                    img(src="../img/novid2.png", alt="search for a duck and view all current listings page")
+                p.description.
+                    Our team used a News API and scrubbed the data to redact and replace virus related words to establish a less-depressing place to read the most recent headlines.#[br]#[br]
+
+                    The seal of approval was then given to all redacted articles and users have the option to redact extra words in the browser.
+                p.description.
+                    😷 Javascript, SCSS, Handlebars #[br]
+                    😷 Node.js, Express. #[br]
+                    😷 MongoDB, Mongoose. #[br]
+                    😷 Heroku. #[br]
+                    😷 Trello, Slack. #[br]
+                    😷 NewsAPI. #[br]
+        include ./footer.pug
+    script(src='./script.js')
