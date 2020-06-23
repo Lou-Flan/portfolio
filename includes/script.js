@@ -30,7 +30,7 @@ var yellow = document.getElementById("yellow");
 var pink = document.getElementById("pink");
 var green = document.getElementById("green");
 var projectTitle = document.getElementById("project-title");
-console.log(projectTitle)
+
 function changeColour(element) {
     if(title){
         title.style.color = element; 
