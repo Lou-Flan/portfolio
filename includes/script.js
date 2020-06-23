@@ -1,3 +1,18 @@
+let message = `
+╔╦╗┬ ┬┌─┐┌┐┌┬┌─┌─┐  ┌─┐┌─┐┬─┐      
+ ║ ├─┤├─┤│││├┴┐└─┐  ├┤ │ │├┬┘      
+ ╩ ┴ ┴┴ ┴┘└┘┴ ┴└─┘  └  └─┘┴└─      
+┌─┐┬ ┬┌─┐┌─┐┬┌─┬┌┐┌┌─┐  ┌─┐┬ ┬┌┬┐  
+│  ├─┤├┤ │  ├┴┐│││││ ┬  │ ││ │ │   
+└─┘┴ ┴└─┘└─┘┴ ┴┴┘└┘└─┘  └─┘└─┘ ┴   
+┌┬┐┬ ┬  ┌─┐┌─┐┬─┐┌┬┐┌─┐┌─┐┬  ┬┌─┐┬ 
+│││└┬┘  ├─┘│ │├┬┘ │ ├┤ │ ││  ││ ││ 
+┴ ┴ ┴   ┴  └─┘┴└─ ┴ └  └─┘┴─┘┴└─┘o `;
+
+console.log(message)
+console.log("If you loved my work, lets chat! louise_flanagan@outlook.com")
+
+
 let title = document.getElementById('title');
 let viewportWidth;
 let nav = document.getElementById('navList');
