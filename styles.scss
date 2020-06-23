@@ -202,13 +202,15 @@ span {
 }
 
 @mixin bgcolour($colour, $url) {
-  background: $colour;
-  transition: background-image 0s ease;
+  background-image: url(#{$url});
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+ 
   &:hover {
-    background-image: url(#{$url});
-    background-position: center;
-    background-size: cover;
-    color: transparent;
+    color: black;
+    background: $colour;
+    transition: background-image 0s ease;
   }
 }
 
@@ -221,10 +223,15 @@ span {
     width: 100%;
     height: auto;
     background: transparent;
-    img, video {
+    img{
       width: 100%;
       height: auto;
       object-fit: contain;
+    }
+    video {
+      object-fit: cover;
+      width: 100%;
+      height: 20em;
     }
   }
 
@@ -236,6 +243,8 @@ span {
   #black {
     color: black;
   }
+
+  
 
   div {
     
@@ -265,16 +274,17 @@ span {
       padding-top: 1rem;
       margin-right: 3em;
     }
+
   }
 
   #pikachu {
-    @include bgcolour($yellow, "./img/pikachu.png");
+    @include bgcolour($yellow, "./img/pikachu.gif");
   }
   #mario {
     @include bgcolour($green, "./img/mario.png");
   }
   #devduckswap {
-    @include bgcolour($pink, "./img/dds1.png");
+    @include bgcolour($pink, "./img/ducks.png");
   }
   #linkart {
     @include bgcolour($green, "./img/link.png");
@@ -283,7 +293,7 @@ span {
     @include bgcolour($green, "./img/debugduck.png");
   }
   #pixelarticle {
-    @include bgcolour($yellow, "./img/pixelart.jpeg");
+    @include bgcolour($yellow, "./img/link-article.png");
   }
   #botdog {
     @include bgcolour($pink, "./img/botdog.png");
@@ -292,7 +302,7 @@ span {
     @include bgcolour($green, "./img/pokecard.png");
   }
   #gsap {
-    @include bgcolour($yellow, "./img/gsap.png");
+    @include bgcolour($yellow, "./img/gsap.gif");
   }
 }
 

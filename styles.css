@@ -1326,11 +1326,18 @@ span:hover {
   background: transparent;
 }
 
-.projects .media-container img, .projects .media-container video {
+.projects .media-container img {
   width: 100%;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.projects .media-container video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 20em;
 }
 
 .projects a {
@@ -1390,120 +1397,129 @@ span:hover {
 }
 
 .projects #pikachu {
-  background: #ffce00;
-  -webkit-transition: background-image 0s ease;
-  transition: background-image 0s ease;
-}
-
-.projects #pikachu:hover {
-  background-image: url(./img/pikachu.png);
+  background-image: url(./img/pikachu.gif);
   background-position: center;
   background-size: cover;
   color: transparent;
 }
 
-.projects #mario {
-  background: #2fd6af;
+.projects #pikachu:hover {
+  color: black;
+  background: #ffce00;
   -webkit-transition: background-image 0s ease;
   transition: background-image 0s ease;
 }
 
-.projects #mario:hover {
+.projects #mario {
   background-image: url(./img/mario.png);
   background-position: center;
   background-size: cover;
   color: transparent;
 }
 
-.projects #devduckswap {
-  background: #ff3675;
-  -webkit-transition: background-image 0s ease;
-  transition: background-image 0s ease;
-}
-
-.projects #devduckswap:hover {
-  background-image: url(./img/dds1.png);
-  background-position: center;
-  background-size: cover;
-  color: transparent;
-}
-
-.projects #linkart {
+.projects #mario:hover {
+  color: black;
   background: #2fd6af;
   -webkit-transition: background-image 0s ease;
   transition: background-image 0s ease;
 }
 
-.projects #linkart:hover {
+.projects #devduckswap {
+  background-image: url(./img/ducks.png);
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+}
+
+.projects #devduckswap:hover {
+  color: black;
+  background: #ff3675;
+  -webkit-transition: background-image 0s ease;
+  transition: background-image 0s ease;
+}
+
+.projects #linkart {
   background-image: url(./img/link.png);
   background-position: center;
   background-size: cover;
   color: transparent;
 }
 
-.projects #debugduck {
+.projects #linkart:hover {
+  color: black;
   background: #2fd6af;
   -webkit-transition: background-image 0s ease;
   transition: background-image 0s ease;
 }
 
-.projects #debugduck:hover {
+.projects #debugduck {
   background-image: url(./img/debugduck.png);
   background-position: center;
   background-size: cover;
   color: transparent;
 }
 
-.projects #pixelarticle {
-  background: #ffce00;
+.projects #debugduck:hover {
+  color: black;
+  background: #2fd6af;
   -webkit-transition: background-image 0s ease;
   transition: background-image 0s ease;
 }
 
-.projects #pixelarticle:hover {
-  background-image: url(./img/pixelart.jpeg);
+.projects #pixelarticle {
+  background-image: url(./img/link-article.png);
   background-position: center;
   background-size: cover;
   color: transparent;
 }
 
-.projects #botdog {
-  background: #ff3675;
+.projects #pixelarticle:hover {
+  color: black;
+  background: #ffce00;
   -webkit-transition: background-image 0s ease;
   transition: background-image 0s ease;
 }
 
-.projects #botdog:hover {
+.projects #botdog {
   background-image: url(./img/botdog.png);
   background-position: center;
   background-size: cover;
   color: transparent;
 }
 
-.projects #pokemon-card {
-  background: #2fd6af;
+.projects #botdog:hover {
+  color: black;
+  background: #ff3675;
   -webkit-transition: background-image 0s ease;
   transition: background-image 0s ease;
 }
 
-.projects #pokemon-card:hover {
+.projects #pokemon-card {
   background-image: url(./img/pokecard.png);
   background-position: center;
   background-size: cover;
   color: transparent;
 }
 
-.projects #gsap {
-  background: #ffce00;
+.projects #pokemon-card:hover {
+  color: black;
+  background: #2fd6af;
   -webkit-transition: background-image 0s ease;
   transition: background-image 0s ease;
 }
 
-.projects #gsap:hover {
-  background-image: url(./img/gsap.png);
+.projects #gsap {
+  background-image: url(./img/gsap.gif);
   background-position: center;
   background-size: cover;
   color: transparent;
+}
+
+.projects #gsap:hover {
+  color: black;
+  background: #ffce00;
+  -webkit-transition: background-image 0s ease;
+  transition: background-image 0s ease;
 }
 
 @media only screen and (max-width: 600px) {
