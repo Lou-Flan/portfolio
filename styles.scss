@@ -133,10 +133,10 @@ header {
       a {
         text-decoration: none;
         color: $black;
+        transition: .2s ease-in;
 
         &:hover {
           background: $green;
-        
         }
       }
     }
@@ -225,7 +225,7 @@ span {
   &:hover {
     color: black;
     background: $colour;
-    transition: background-image 0s ease;
+    transition: .5s ease-in;
   }
 }
 

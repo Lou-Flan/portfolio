@@ -1223,6 +1223,8 @@ header nav ul li, footer nav ul li {
 header nav ul a, footer nav ul a {
   text-decoration: none;
   color: black;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
 }
 
 header nav ul a:hover, footer nav ul a:hover {
@@ -1424,8 +1426,8 @@ span:hover {
 .projects #pikachu:hover {
   color: black;
   background: #ffce00;
-  -webkit-transition: background-image 0s ease;
-  transition: background-image 0s ease;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
 }
 
 .projects #mario {
@@ -1438,8 +1440,8 @@ span:hover {
 .projects #mario:hover {
   color: black;
   background: #2fd6af;
-  -webkit-transition: background-image 0s ease;
-  transition: background-image 0s ease;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
 }
 
 .projects #devduckswap {
@@ -1452,8 +1454,8 @@ span:hover {
 .projects #devduckswap:hover {
   color: black;
   background: #ff3675;
-  -webkit-transition: background-image 0s ease;
-  transition: background-image 0s ease;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
 }
 
 .projects #linkart {
@@ -1466,8 +1468,8 @@ span:hover {
 .projects #linkart:hover {
   color: black;
   background: #2fd6af;
-  -webkit-transition: background-image 0s ease;
-  transition: background-image 0s ease;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
 }
 
 .projects #debugduck {
@@ -1480,8 +1482,8 @@ span:hover {
 .projects #debugduck:hover {
   color: black;
   background: #2fd6af;
-  -webkit-transition: background-image 0s ease;
-  transition: background-image 0s ease;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
 }
 
 .projects #pixelarticle {
@@ -1494,8 +1496,8 @@ span:hover {
 .projects #pixelarticle:hover {
   color: black;
   background: #ffce00;
-  -webkit-transition: background-image 0s ease;
-  transition: background-image 0s ease;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
 }
 
 .projects #botdog {
@@ -1508,8 +1510,8 @@ span:hover {
 .projects #botdog:hover {
   color: black;
   background: #ff3675;
-  -webkit-transition: background-image 0s ease;
-  transition: background-image 0s ease;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
 }
 
 .projects #pokemon-card {
@@ -1522,8 +1524,8 @@ span:hover {
 .projects #pokemon-card:hover {
   color: black;
   background: #2fd6af;
-  -webkit-transition: background-image 0s ease;
-  transition: background-image 0s ease;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
 }
 
 .projects #gsap {
@@ -1536,8 +1538,8 @@ span:hover {
 .projects #gsap:hover {
   color: black;
   background: #ffce00;
-  -webkit-transition: background-image 0s ease;
-  transition: background-image 0s ease;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
 }
 
 .projects #novid {
@@ -1550,8 +1552,8 @@ span:hover {
 .projects #novid:hover {
   color: black;
   background: #ff3675;
-  -webkit-transition: background-image 0s ease;
-  transition: background-image 0s ease;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
 }
 
 .projects #archive {
