@@ -1339,6 +1339,7 @@ span:hover {
   width: 100%;
   height: auto;
   background: transparent;
+  overflow: hidden;
 }
 
 .projects .media-container img {
@@ -1349,10 +1350,10 @@ span:hover {
 }
 
 .projects .media-container video {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   width: 100%;
-  height: 20em;
+  height: 100%;
 }
 
 .projects a {
