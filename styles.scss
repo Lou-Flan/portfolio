@@ -42,6 +42,8 @@ body{
 body {
   @include flex(row, center);
   font-family: $heading-font;
+  width: 100vw;
+  height: 100vh;
 }
 
 .container {
@@ -63,7 +65,8 @@ body {
   }
 
   .container {
-    width: 90vw;
+    width: 95vw;
+    overflow-x: hidden;
   }
 }
 
@@ -263,8 +266,10 @@ span {
     @include flex(column, center);
     height: 20em;
     overflow: hidden;
-    margin: 0.5rem;
-    background: $yellow;
+    margin: 0.5rem 0rem;
+    @media only screen and (min-width: 601px) {
+      margin: 0.5rem 0.5rem;
+    }
 
     .categories,
     .resource {
@@ -319,6 +324,9 @@ span {
   #novid {
     @include bgcolour($pink, "./img/novid.png");
   }
+  #archive {
+    background: $yellow;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -355,7 +363,7 @@ iframe{
 
 pre {
   color: $green;
-  font-size: 1.6em;
+  // font-size: 1.6em;
 }
 
 .link {

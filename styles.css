@@ -1092,6 +1092,8 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   font-family: "Raleway", sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
 .container {
@@ -1129,7 +1131,8 @@ body {
     display: none;
   }
   .container {
-    width: 90vw;
+    width: 95vw;
+    overflow-x: hidden;
   }
 }
 
@@ -1377,8 +1380,13 @@ span:hover {
           flex-direction: column;
   height: 20em;
   overflow: hidden;
-  margin: 0.5rem;
-  background: #ffce00;
+  margin: 0.5rem 0rem;
+}
+
+@media only screen and (min-width: 601px) {
+  .projects div {
+    margin: 0.5rem 0.5rem;
+  }
 }
 
 .projects div .categories,
@@ -1546,6 +1554,10 @@ span:hover {
   transition: background-image 0s ease;
 }
 
+.projects #archive {
+  background: #ffce00;
+}
+
 @media only screen and (max-width: 600px) {
   #project-title {
     font-size: 3em;
@@ -1575,7 +1587,6 @@ iframe {
 
 pre {
   color: #2fd6af;
-  font-size: 1.6em;
 }
 
 .link {
