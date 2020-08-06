@@ -326,8 +326,14 @@ span {
   #novid {
     @include bgcolour($pink, "./img/novid.png");
   }
+  #toothinc {
+    @include bgcolour($yellow, "./img/toothinc.png");
+  }
+  #cssearring {
+    @include bgcolour($green, "./img/cssearring.png");
+  }
   #archive {
-    background: $yellow;
+    @include bgcolour($pink, "./img/archive.png");
   }
 }
 
@@ -350,6 +356,9 @@ span {
   .media-container {
     width: 60%;
     height: auto;
+  }
+  #wide{
+    width: 100%;
   }
 }
 

@@ -1557,8 +1557,46 @@ span:hover {
   transition: .5s ease-in;
 }
 
-.projects #archive {
+.projects #toothinc {
+  background-image: url(./img/toothinc.png);
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+}
+
+.projects #toothinc:hover {
+  color: black;
   background: #ffce00;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+}
+
+.projects #cssearring {
+  background-image: url(./img/cssearring.png);
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+}
+
+.projects #cssearring:hover {
+  color: black;
+  background: #2fd6af;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+}
+
+.projects #archive {
+  background-image: url(./img/archive.png);
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+}
+
+.projects #archive:hover {
+  color: black;
+  background: #ff3675;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1577,6 +1615,9 @@ span:hover {
   .projects .media-container {
     width: 60%;
     height: auto;
+  }
+  .projects #wide {
+    width: 100%;
   }
   .description {
     width: 50vw;
